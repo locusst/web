@@ -1,0 +1,158 @@
+:root {
+    --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --primary-color: #136F63;
+    --light: #FEF5EF;
+    --background: #000000;
+    --shadow-border: #847979;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*+* {
+    margin: .5em 0;
+}
+
+pre {
+    overflow: auto
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 0 0 1px var(--shadow-border);
+}
+
+@media(min-width:35em) {
+    .col {
+        display: table-cell;
+    }
+
+    .\31 {
+        width: 5%;
+    }
+
+    .\33 {
+        width: 22%;
+    }
+
+    .\34 {
+        width: 30%;
+    }
+
+    .\35 {
+        width: 40%;
+    }
+
+    .\32 {
+        width: 15%;
+    }
+
+    .\36 {
+        width: 50%;
+    }
+
+    .row {
+        display: table;
+        border-spacing: 1em 0;
+    }
+}
+
+.w-100,
+.row {
+    width: 100%;
+}
+
+.card:focus,
+hr {
+    outline: 0;
+    border: solid var(--shadow-border);
+}
+
+li>a {
+    font-size: 1.5em;
+}
+
+.card,
+pre {
+    padding: 1em;
+    border: solid var(--shadow-border);
+}
+
+a:hover,
+.btn:hover {
+    opacity: .6;
+}
+
+.c {
+    max-width: 60em;
+    padding: 1em;
+    margin: auto;
+    font: 1.0em/1.6 var(--font);
+}
+
+h6 {
+    font: 200 1em var(--font);
+}
+
+h5 {
+    font: 200 1.2em var(--font);
+}
+
+h3 {
+    font: 200 2em var(--font);
+}
+
+h4 {
+    font: 200 1.5em var(--font);
+}
+
+h2 {
+    font: 200 2.2em var(--font);
+}
+
+h1 {
+    font: 400 2.5em var(--font);
+    margin-bottom: auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    align-self: center;
+    text-shadow: 0px 0px 0.3em var(--primary-color);
+}
+
+.btn.primary {
+    color: var(--light);
+    background: var(--primary-color);
+    border: solid var(--primary-color);
+}
+
+ul {
+    list-style-position: outside;
+}
+
+td,
+th {
+    padding: 1em;
+    text-align: left;
+    border-bottom: solid var(--shadow-border);
+}
+
+.btn {
+    padding: 1em;
+    text-transform: uppercase;
+    background: var(--background);
+    border: solid var(--shadow-border);
+    font: .7em var(--font);
+}
+
+html {
+    background: var(--background);
+    color: var(--light);
+}

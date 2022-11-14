@@ -1,0 +1,20 @@
+<head><title>Static Site Generator in Rust</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"></head><body><div class="c"><h1><a href="index.html">Locusst</a><span style="margin-left:0.9rem; font-variant: small-caps; font-size:1.5rem">Software developer and devil's advocate.</span></h1><p>powered by rusty!</p><hr></hr><h2>Static Site Generator in Rust</h2><p>Locusst</p><p>2022-11-14</p><h2>About</h2>
+<p>I've been working on a static site generator in Rust for a while now. It's not ready for production yet, but I'm getting there. I'm using it to generate this site, and I'm pretty happy with it so far.</p>
+<h2>Technology</h2>
+<p>Rusty uses the following technologies:</p>
+<ul>
+<li><a href="https://maud.lambda.xyz/">maud</a> for templating</li>
+<li><a href="https://github.com/kivikakk/comrak">comrak</a> for markdown parsing</li>
+<li><a href="https://github.com/clap-rs/clap">clap</a> for command line parsing</li>
+</ul>
+<h2>Flow</h2>
+<p>First, the program takes a source directory and output directory as command line arguments. It then reads all the files in the source directory, and parses them as to obtain front matter info (title, author, date). It then renders the markdown into HTML using comrak, and inserts that into a template along with the front matter using maud. Finally, it writes the rendered HTML to the output directory.</p>
+<h2>Future</h2>
+<p>I'm planning on adding the following features:</p>
+<ul>
+<li>[✅] Support for multiple templates</li>
+<li>[❌] Support for a development server</li>
+<li>[❌] Support for custom CSS</li>
+<li>[❌] Support for custom JS</li>
+</ul>
+</div></body>
