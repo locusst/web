@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site Generator in Rust</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="c">
+        <h1><a href="/">Locusst</a><span
+                style="margin-left:0.9rem; font-variant: small-caps; font-size:1.5rem">l(oops)cusst</span></h1>
+        <p>powered by <a href="https://github.com/locusst/rustful">rustful</a>!</p>
+        <hr>
+        <h2>Static Site Generator in Rust</h2>
+        <p>Locusst</p>
+        <p>2022-11-16</p>
+        <h2>rusty &amp; rustful</h2>
+<p>This site is generated with <a href="https://github.com/locusst/rustful">rustful</a> which is a rewrite of <a href="https://github.com/locusst/rusty">rusty</a> but with a different approach to templating &amp; general project structure. It's still a work in progress but it's already usable.</p>
+<h2>Technical Details</h2>
+<p>Rustful is basically identical to rusty, except rustful uses <a href="https://github.com/Keats/tera">tera</a> for templating instead of rusty's <a href="https://maud.lambda.xyz">maud</a> which is a compile-time html templating library. This means that rustful is much slower than rusty, but it's also much more flexible. It also means that rustful is much more similar to other static site generators like <a href="https://jekyllrb.com">jekyll</a> or <a href="https://gohugo.io">hugo</a>.</p>
+<h2>Usage</h2>
+<pre><code class="language-bash">$ rustful [options]
+</code></pre>
+<h2>Options</h2>
+<ul>
+<li><code>-h</code>, <code>--help</code> - Show this help message</li>
+<li><code>-v</code>, <code>--version</code> - Show the version</li>
+<li><code>-s</code>, <code>--source</code> - The source directory</li>
+<li><code>-o</code>, <code>--output</code> - The output directory</li>
+</ul>
+<h2>Example</h2>
+<pre><code class="language-bash">$ rustful -s source -o output
+</code></pre>
+<h2>Config</h2>
+<p>The config file is located at <code>source/config.toml</code> and has the following structure:</p>
+<pre><code class="language-toml">title = &quot;My Blog&quot;
+description = &quot;A blog about stuff&quot;
+</code></pre>
+<h2>Posts</h2>
+<p>Posts are located in <code>source/posts</code> and have the following structure:</p>
+<pre><code class="language-md">---
+title: My Post
+date: 2014-01-01
+author: John Doe
+---
+
+# My Post
+</code></pre>
+<h2>Templates</h2>
+<p>Templates are located in <code>source/templates</code> and use Tera (jinja2-like) syntax.</p>
+<h2>Assets</h2>
+<p>Assets are located in <code>source/assets</code> and are copied to the output directory.</p>
+<h2>License</h2>
+<p>rustful is licensed under the MIT license. See <a href="https://opensource.org/licenses/MIT">LICENSE</a> for more details.</p>
+
+    </div>
+</body>
+
+</html>
